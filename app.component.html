@@ -4,7 +4,7 @@
 		[treeColumnIndex]='0'>
 		<e-columns>
 			<e-column field='taskName' headerText='Task Name' width='200' [showCheckbox]='true'></e-column>
-			<e-column field='approved' width='90' [allowFiltering]='true' [allowSorting]='false'>
+			<e-column field='approved' width='90' [allowFiltering]='false' [allowSorting]='false'>
 				<ng-template #headerTemplate>
 					<div>
 						Enable/Disable <ejs-switch (change)="change($event)"></ejs-switch>
