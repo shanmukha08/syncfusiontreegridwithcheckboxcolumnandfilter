@@ -19,8 +19,10 @@ export class AppComponent {
     ngOnInit(): void {
       this.filterSettings = { type: "Excel" }; 
         this.data = sampleData;
+       // this.grid.columns
     }
-    change(data: any):any{
+    change(data: any){
       alert(data.checked);
+
     }
 }
