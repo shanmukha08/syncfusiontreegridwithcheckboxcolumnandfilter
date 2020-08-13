@@ -1,19 +1,19 @@
-<div class="control-section">   
-    <ejs-treegrid [dataSource]='data' height = '400' autoCheckHierarchy='true' [filterSettings]='filterSettings' childMapping='subtasks'  [allowSorting]='true'  [filterSettings]='filterSettings' [allowFiltering]='true'
-    [treeColumnIndex]='0'> 
-        <e-columns>
-            <e-column field='taskName' headerText='Task Name' width='200' [showCheckbox]='true'></e-column>  
-            <e-column field='approved'  width='90' [allowFiltering]='false' [allowSorting]='false' >
-            <ng-template #headerTemplate>      
-        <div>
-             Enable/Disable <ejs-switch></ejs-switch>
-        </div>
-    </ng-template>
-            <ng-template #template let-data>
-                      <ejs-switch  [checked]="data?.approved"></ejs-switch>
-              </ng-template>
-            </e-column>
-        </e-columns>
-    </ejs-treegrid>
+<div class="control-section">
+	<ejs-treegrid [dataSource]='data' height='400' autoCheckHierarchy='true' [filterSettings]='filterSettings'
+		childMapping='subtasks' [allowSorting]='true' [filterSettings]='filterSettings' [allowFiltering]='true'
+		[treeColumnIndex]='0'>
+		<e-columns>
+			<e-column field='taskName' headerText='Task Name' width='200' [showCheckbox]='true'></e-column>
+			<e-column field='approved' width='90' [allowFiltering]='true' [allowSorting]='false'>
+				<ng-template #headerTemplate>
+					<div>
+						Enable/Disable <ejs-switch></ejs-switch>
+					</div>
+				</ng-template>
+				<ng-template #template let-data>
+					<ejs-switch [checked]="data?.approved"></ejs-switch>
+				</ng-template>
+			</e-column>
+		</e-columns>
+	</ejs-treegrid>
 </div>
-

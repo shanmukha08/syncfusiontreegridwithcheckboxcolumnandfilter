@@ -1,6 +1,8 @@
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { sampleData } from './jsontreegriddata';
 import { PageService} from '@syncfusion/ej2-angular-treegrid';
+import { GridComponent} from '@syncfusion/ej2-angular-grids';
+
 
 
 @Component({
