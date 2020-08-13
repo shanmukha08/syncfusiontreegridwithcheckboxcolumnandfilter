@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild } from '@angular/core';
 import { sampleData } from './jsontreegriddata';
 import { PageService} from '@syncfusion/ej2-angular-treegrid';
 
@@ -12,6 +12,7 @@ import { PageService} from '@syncfusion/ej2-angular-treegrid';
 export class AppComponent {
   public filterSettings: Object;
     public data: Object[] = [];
+        @ViewChild('grid') public grid: GridComponent;
 
     ngOnInit(): void {
       this.filterSettings = { type: "Excel" }; 

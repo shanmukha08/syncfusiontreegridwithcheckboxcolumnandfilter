@@ -2,8 +2,7 @@
     <ejs-treegrid [dataSource]='data' height = '400' autoCheckHierarchy='true' [filterSettings]='filterSettings' childMapping='subtasks'  [allowSorting]='true'  [filterSettings]='filterSettings' [allowFiltering]='true'
     [treeColumnIndex]='0'> 
         <e-columns>
-            <e-column field='taskName' headerText='Task Name' width='200' [showCheckbox]='true'></e-column> 
-           
+            <e-column field='taskName' headerText='Task Name' width='200' [showCheckbox]='true'></e-column>  
             <e-column field='approved'  width='90' [allowFiltering]='false' [allowSorting]='false' >
             <ng-template #headerTemplate>      
         <div>
