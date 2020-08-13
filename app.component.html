@@ -4,7 +4,12 @@
         <e-columns>
             <e-column field='taskName' headerText='Task Name' width='200' [showCheckbox]='true'></e-column> 
            
-            <e-column field='approved' headerText='Enable/Disable' width='90' [allowFiltering]='true' [allowSorting]='true' >
+            <e-column field='approved'  width='90' [allowFiltering]='false' [allowSorting]='false' >
+            <ng-template #headerTemplate>      
+        <div>
+             Enable/Disable <ejs-switch></ejs-switch>
+        </div>
+    </ng-template>
             <ng-template #template let-data>
                       <ejs-switch  [checked]="data?.approved"></ejs-switch>
               </ng-template>
