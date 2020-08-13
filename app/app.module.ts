@@ -1,4 +1,5 @@
 import { SparklineAllModule } from '@syncfusion/ej2-angular-charts';
+import { SwitchModule } from '@syncfusion/ej2-angular-buttons';
 
 import { DialogModule } from '@syncfusion/ej2-angular-popups';
 
@@ -26,7 +27,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { NgModule,CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 import { AppComponent } from '../app.component';
-@NgModule({ declarations: [ AppComponent ], imports: [ CommonModule, HttpModule, TreeGridAllModule,       NumericTextBoxAllModule, ToolbarModule, DropDownListAllModule, ButtonAllModule, DialogModule, MultiSelectAllModule, CheckBoxAllModule, ReactiveFormsModule, FormsModule, DatePickerModule, SparklineAllModule, BrowserModule], providers: [], 
+@NgModule({ declarations: [ AppComponent ], imports: [ CommonModule, HttpModule, SwitchModule,TreeGridAllModule,       NumericTextBoxAllModule, ToolbarModule, DropDownListAllModule, ButtonAllModule, DialogModule, MultiSelectAllModule, CheckBoxAllModule, ReactiveFormsModule, FormsModule, DatePickerModule, SparklineAllModule, BrowserModule], providers: [], 
 schemas:[CUSTOM_ELEMENTS_SCHEMA,NO_ERRORS_SCHEMA],
 bootstrap: [AppComponent]
 })

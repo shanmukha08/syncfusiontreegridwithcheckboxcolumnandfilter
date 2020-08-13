@@ -1,21 +1,25 @@
 <div class="control-section">   
-    <ejs-treegrid [dataSource]='data' height = '400' autoCheckHierarchy='true' [filterSettings]='filterSettings' childMapping='subtasks'  [allowSorting]='true'  [filterSettings]='filterSettings' [allowFiltering]='true'
+    <ejs-treegrid [dataSource]='data' height = '400' autoCheckHierarchy='true' [filterSettings]='filterSettings' childMapping='subtasks' queryCellInfo="queryCellInfo"  [allowSorting]='true'  [filterSettings]='filterSettings' [allowFiltering]='true'
     [treeColumnIndex]='1'> 
         <e-columns>
             <e-column field='taskID' headerText='Task ID'  [allowFiltering]='false' [allowSorting]='false' isPrimaryKey='true' width='70' textAlign='Right'></e-column>
             <e-column field='taskName' headerText='Task Name' width='200' [showCheckbox]='true'></e-column> 
 
-            <e-column field='approved' headerText='Enable/Disable' width='200' >
-              <ng-template #template let-data>
-                  <ejs-switch   [checked]="data.approved"></ejs-switch>
-                    <!-- <ejs-sparkline id='treegridline{{data.EmployeeID}}' [dataSource]='getSparkLine(data.EmployeeID)' height='50px' width='150px' lineWidth='2' valueType='Numeric' fill='#3C78EF' (load)="sparkload($event)"></ejs-sparkline> -->
-                    
-
-                </ng-template>
+            <e-column field='approved' headerText='Enable/Disable' width='200'  >
+             <ng-template #template let-data>
+                      <ejs-switch  [checked]="data.approved"></ejs-switch>
+              </ng-template>
             </e-column>
+             
+            
            
             <e-column field='startDate' headerText='Start Date' width='90' format="yMd" textAlign='Right'[allowFiltering]='false' [allowSorting]='false' ></e-column>
         </e-columns>
     </ejs-treegrid>
 </div>
+  <ng-template let-data #template1>
+    <button ejs-button>Button</button>
+</ng-template>
+
+
 
