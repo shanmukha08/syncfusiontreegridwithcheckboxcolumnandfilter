@@ -4,8 +4,9 @@
         <e-columns>
             <e-column field='taskID' headerText='Task ID'  [allowFiltering]='false' [allowSorting]='false' isPrimaryKey='true' width='70' textAlign='Right'></e-column>
             <e-column field='taskName' headerText='Task Name' width='200' [showCheckbox]='true'></e-column> 
+            <e-column field='approved' type="checkbox" headerText='Enable/Disable' width='200' ></e-column>
+           
             <e-column field='startDate' headerText='Start Date' width='90' format="yMd" textAlign='Right'[allowFiltering]='false' [allowSorting]='false' ></e-column>
-            
         </e-columns>
     </ejs-treegrid>
 </div>
