@@ -20,4 +20,7 @@ export class AppComponent {
       this.filterSettings = { type: "Excel" }; 
         this.data = sampleData;
     }
+    change(data: any):any{
+      alert(data.checked);
+    }
 }

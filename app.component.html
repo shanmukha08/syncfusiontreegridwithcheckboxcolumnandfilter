@@ -7,7 +7,7 @@
 			<e-column field='approved' width='90' [allowFiltering]='true' [allowSorting]='false'>
 				<ng-template #headerTemplate>
 					<div>
-						Enable/Disable <ejs-switch></ejs-switch>
+						Enable/Disable <ejs-switch (change)="change($event)"></ejs-switch>
 					</div>
 				</ng-template>
 				<ng-template #template let-data>
