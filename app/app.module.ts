@@ -24,8 +24,10 @@ import { CommonModule } from '@angular/common';
 
 import { BrowserModule } from '@angular/platform-browser';
 
-import { NgModule } from '@angular/core';
+import { NgModule,CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 import { AppComponent } from '../app.component';
-@NgModule({ declarations: [ AppComponent ], imports: [ CommonModule, HttpModule, TreeGridAllModule,       NumericTextBoxAllModule, ToolbarModule, DropDownListAllModule, ButtonAllModule, DialogModule, MultiSelectAllModule, CheckBoxAllModule, ReactiveFormsModule, FormsModule, DatePickerModule, SparklineAllModule, BrowserModule], providers: [], bootstrap: [AppComponent]
+@NgModule({ declarations: [ AppComponent ], imports: [ CommonModule, HttpModule, TreeGridAllModule,       NumericTextBoxAllModule, ToolbarModule, DropDownListAllModule, ButtonAllModule, DialogModule, MultiSelectAllModule, CheckBoxAllModule, ReactiveFormsModule, FormsModule, DatePickerModule, SparklineAllModule, BrowserModule], providers: [], 
+schemas:[CUSTOM_ELEMENTS_SCHEMA,NO_ERRORS_SCHEMA],
+bootstrap: [AppComponent]
 })
 export class AppModule { }

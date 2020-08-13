@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { sampleData } from './jsontreegriddata';
 import { PageService} from '@syncfusion/ej2-angular-treegrid';
+import { SwitchComponent } from '@syncfusion/ej2-angular-buttons';
 
 
 @Component({
